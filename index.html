@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dedca2b85b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div id="header" >
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Network Administrator</p>
+            <h1>Hi,I'm <span>Bhanoday</span> <br>Gollapalli From India</h1>
+        </div>
+    </div>
+
+</div>
+<!---------------------------------------------about---------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    "Welcome to my portfolio. I am a recent graduate, holding a BSc in Computers and newly certified in CCNA, signaling a strong foundation in both computer science and networking.
+                    My academic journey has been driven by a passion for understanding the intricate workings of technology. Through both my degree and certification, I have developed a comprehensive understanding of computer systems and networking essentials.<br>
+                    I am committed to applying this knowledge effectively in practical scenarios and seeking opportunities where I can contribute to innovative solutions in the ever-evolving tech industry. My aim is to leverage my skills to make a valuable and lasting impact.
+                    Feel free to explore my portfolio to gain insights into my projects and skills. I am enthusiastic about exploring opportunities for collaboration and growth in the dynamic realm of technology."
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Routing</span><br>OSPF, EIGRP</li>
+                        <li><span>Switching</span><br>STP, VLAN</li>
+                        <li><span>Security</span><br>DAI, DHCP Snooping</li>
+                        <li><span>Troubleshooting</span><br></li>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br></li>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Bsc.Computers at Andhra University</li>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Cisco Certified Network Associate ( CCNA )</span><br>Nov-2023 to Nov 2026</li>
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--------------------------------------------Services---------------------------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2> Network Implementation</h2>
+                <p>enter descirption about service</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-power-off"></i>
+                <h2> Troubleshooting </h2>
+                <p>enter descirption about service</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-display"></i>
+                <h2> Network Monitoring </h2>
+                <p>enter descirption about service</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!----------------------------------Portfolio-------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Projects </h1>
+
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/1.png">
+                
+                <div class="layer">
+                    <h3>First Project</h3>
+                    <p>add some descirption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/2-Tier LAN.png">
+
+                <div class="layer">
+                    <h3>Second Project</h3>
+                    <p>add some descirption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="">
+
+                <div class="layer">
+                    <h3>Third Project</h3>
+                    <p>add some descirption</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <a href="#" class="btn"> See more </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-------------------------------Contact------------------------------------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+
+                <h1 class="sub-title"> Contact Me </h1>
+                <p> <i class="fa-solid fa-envelope"></i> bhanodaygollapalli@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +919666355136</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/bhanodaygollapalli/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+
+                <a href="images/Bhanu_Resume.pdf" download class="btn btn2"> Download CV </a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> <i class="fa-regular fa-copyright"></i> copyright @ Bhanoday Gollapalli. </p>
+    </div>
+
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySi3gdeG7a9OdkIO93TSufdBOpwns-uIpHWj8sYFkAtWlUNXjcznCQR7R2Gc1SbJPu/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
